@@ -1,0 +1,491 @@
+/* main.css */
+
+@charset "UTF-8";
+
+#wrap{
+    width: 320px; height: auto; min-height: 900px;
+    margin: auto;
+}
+.full {width: 100%;}
+a {display: block;
+    width: 100%; height: 100%;}
+
+
+/* headBox======================================== */
+#headBox{
+    position: relative;
+    height: 48px;
+    padding-top: 12px; box-sizing: border-box;
+    background-color: #262626;
+}
+.gnbBox{
+    float: left;
+    width: 22px; height: 28px; 
+    margin-left: 12px;
+}
+.gnbBox ul{
+    float: left;
+    width: 22px; height: 22px;
+    background-color: #fff;
+
+}
+.gnbBox li{
+    display: none;
+    float: left;
+}
+.gnbBox li:nth-child(1){
+    width: 60px; height: 26px;
+    background-image: url(../../img/sony/headBox_menu_gnb.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-position-x: 6px;
+}
+.gnbBox li:nth-child(2){
+    width: 80px; height: 26px;
+    margin-left: 18px;
+    background-image: url(../../img/sony/headBox_menu_gnb.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-position-x: -76px;
+}
+.gnbBox li:nth-child(3){
+    width: 102px; height: 26px;
+    margin-left: 18px;
+    background-image: url(../../img/sony/headBox_menu_gnb.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-position-x: -174px;
+}
+.gnbBox li:hover{
+    border-bottom: 2px solid #fff;
+}
+.logo{float: left; margin-left: 4px;
+    width: 96px; height: 24px;
+    background-size: 92%;
+    background-image: url(../../img/sony/headBox_logo.png);
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+}
+.unbBox{
+    float: right; 
+    width: 172px; height: 48px; 
+    margin-right: 6px;
+}
+.unbBox li{
+    float: left;
+}
+.unbBox li:nth-child(1){
+    width: 64px; height: 26px;
+    background-image: url(../../img/sony/headBox_menu_unb.png);
+    background-repeat: no-repeat;
+    background-position: -4px 0;
+}
+.unbBox li:nth-child(2){
+    width: 102px; height: 26px;
+     margin-left: 6px;
+    background-image: url(../../img/sony/headBox_menu_unb.png);
+    background-repeat: no-repeat;
+    background-position: -112px 0;
+    /* background-position-x: -104px; */
+}
+.unbBox li:hover{
+    border-bottom: 2px solid #fff;
+}
+.search{
+    position: absolute; right: 6px; top: 40px;
+    width: 288px; height: 68px;
+    background-image: url(../../img/sony/searchBox.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: none;
+}
+.unbBox .sb:hover .search{
+    display: block;
+}
+
+/* viewBox======================================== */
+#viewBox{
+    height: 170px;
+    padding: 20px 10px; box-sizing: border-box;
+    background-size: 510px 170px;
+    background-image: url(../../img/sony/view_bg.png);
+    background-repeat: no-repeat;    
+    background-position: 50% 50%;    
+}
+.view{
+    float: right;
+}
+.view h3{
+    font-size: 1.2rem;
+    text-align: right;
+}
+.view button{
+    width: 74px; height: 16px;
+    float: right;
+    margin-top: 6px;
+    font-size: 0.2rem;
+    border-radius: 26px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+.view button:hover{
+    background-color: #ebbc66;
+    color: #fff;
+}
+
+/* contentBox======================================== */
+#contentBox{
+    position: relative;
+    height: 214px;
+    padding: 20px 22px; box-sizing: border-box;
+    text-transform: uppercase;
+}
+#contentBox h2{
+    font-size: 1.1rem;
+}
+.imgBox{
+    width: 250px; height: 98px;
+    margin: auto;
+    margin-top: 24px; margin-bottom: 14px;
+}
+.con_01{
+    float: left;
+    width: 68px; height: 74px;
+    background-image: url(../../img/sony/con_pic02_m.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.3);
+}
+.con_01>.conTxt{
+    width: 100%; height: 34px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.con_02{
+    float: left;
+    width: 94px; height: 98px;
+    margin-left: 10px;
+    background-image: url(../../img/sony/con_pic01_m.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.3);
+}
+.con_02>.conTxt{
+    width: 100%; height: 48px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.con_03{
+    float: right; 
+    width: 68px; height: 74px;
+    background-image: url(../../img/sony/con_pic03_m.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.3);
+}
+.con_03>.conTxt{
+    width: 100%; height: 34px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slideBtn{
+    position: absolute; z-index: 100;
+    top: 82px; left: 4px;
+    width: 310px; height: 60px;
+}
+.slideBtn a{
+    display: block;
+    width: 100%; height: 100%;
+}
+.prevBtn{
+    float: left;
+    width: 24px; height: 100%;
+    background-image: url(../../img/sony/arrow_img_320.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.prevBtn:hover{
+    background-image: url(../../img/sony/arrow_on_img_320.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.nextBtn{
+    float: right;
+    width: 24px; height: 100%;
+    background-image: url(../../img/sony/arrow_img_320.png);
+    background-repeat: no-repeat;
+    background-position: -288px 0;
+}
+.nextBtn:hover{
+    background-image: url(../../img/sony/arrow_on_img_320.png);
+    background-repeat: no-repeat;
+    background-position: -288px 0;
+}
+.slideNavi{
+    width: 104px; height: 18px;
+    margin: auto; padding-top: 2px; box-sizing: border-box;
+}
+.slideNavi li{
+    float: left; margin-left: 4px;
+    width: 14px; height: 14px;
+    background-image: url(../../img/sony/slide_m.png);
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+.slideNavi li:first-child{
+    margin-left: 0;
+}
+.slideNavi li:hover{
+    background-image: url(../../img/sony/slide_m_on.png);
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+}
+
+/* articleBox======================================== */
+/* .bgImg{
+    position: absolute; z-index: 10;
+    float: left;
+    width: 100%; height: 630px;
+    background-image: url(../../img/sony/articleBox_bg_source.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+} */
+#articleBox{
+    position: relative;
+    height: 250px;
+    padding:16px 24px; box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: #f0f5f9;
+}
+#articleBox h2{
+    font-size: 1.1rem;
+    text-align: left;
+}
+.conBox{
+    position: absolute; z-index: 100;
+    width: 320px; height: 332px;
+    margin: auto; margin-top: 10px;
+}
+.menu{
+    width: 100%; height: 38px;
+    margin-bottom: 0px;
+}
+.menu li{
+    float: left;
+    width: 62px; height: 26px;
+    margin-left: 8px;
+    text-align: center;
+    background-color: #fff;
+    border-left: 6px solid #2e69a5;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.menu li:first-child{margin-left: 0;}
+.menu li:hover{
+    background-color: #2e69a5;
+    color: #fff;
+}
+.menu a{
+    display: block;
+    width: 100%; height: 100%;
+} 
+.con{
+    width: 276px; height: 140px;
+}
+.pic{
+    float: left;
+    width: 134px; height: 100%;
+    background-image: url(../../img/sony/article_img.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.txt{
+    float: right; 
+    padding: 6px 8px; box-sizing: border-box;
+    width: 134px; height: 100%;
+    letter-spacing: 0.1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.txt>p{
+    font-size: 0.88rem;
+    text-align: justify    
+}
+.txt>button{
+    width: 80px; height: 20px;
+    margin-top: 14px; margin-left: 1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.txt>button:hover{
+    background-color: #ebbc66;
+    border: 1px solid #ebbc66;
+    color: #fff;
+}
+
+/* picBox======================================== */
+#picBox{
+    height: 208px;
+    padding: 36px 24px; box-sizing: border-box;
+    background-image: url(../../img/sony/picBox_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.pic_b h2{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+}
+.pic_b button{
+    width: 108px; height: 26px;
+    font-size: 0.7rem;
+    margin-top: 70px; 
+    border-radius: 26px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+.pic_b button:hover{
+    background-color: #ebbc66;
+    color: #fff;
+}
+
+/* newsBox======================================== */
+#newsBox{
+    height: 406px;
+    padding: 22px 24px; box-sizing: border-box;
+    background-image: url(../../img/sony/news_Bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+}
+#newsBox>h2{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.newsPicBox{
+    width: 232px; height: 220px;
+    margin-top: 18px; margin-left: 20px;
+}
+.newsPicBox li{
+    float: left;
+    width: 106px; height: 150px;
+    margin-left: 20px;
+}
+.news_pic{
+    float: left;
+    width: 106px; height: 106px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.news_pic01{
+    background-image: url(../../img/sony/news_img.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.news_pic02{
+    background-image: url(../../img/sony/news_img.png);
+    background-repeat: no-repeat;
+    background-position: -174px 0;
+}
+.news_pic03{
+    background-image: url(../../img/sony/news_img.png);
+    background-repeat: no-repeat;
+    background-position: -344px 0;
+}
+.news_pic04{
+    background-image: url(../../img/sony/news_img.png);
+    background-repeat: no-repeat;
+    background-position: -516px 0;
+}
+.news_pic05{
+    background-image: url(../../img/sony/news_img.png);
+    background-repeat: no-repeat;
+    background-position: -688px;
+}
+.picTxt{
+    float: left;
+    width: 106px; height: 40px;
+    margin-top: 4px;
+    padding: 1px; box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    text-align: center;
+}
+.newsPicBox li:nth-child(1),
+.newsPicBox li:nth-child(3){
+    margin-left: 0;
+}
+.newsPicBox li:nth-child(3),
+.newsPicBox li:nth-child(4){
+    margin-top: 12px;
+}
+.newsPicBox li:nth-child(5){
+    display: none;
+}
+.newsPicBox a:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* noticeBox======================================== */
+#noticeBox{
+    height: 202px;
+    font-size: 0.8rem;
+    padding: 24px 10px; box-sizing: border-box;
+    background-color:  #f0f5f9;
+}
+
+
+/* footBox======================================== */
+#footBox{
+    height: 324px;
+    padding: 12px 50px 16px 116px; box-sizing: border-box;
+    background-color: #262626;
+    color: lightcyan;
+}
+.footMenuBox{
+    width: 100%; height: 166px;
+}
+.footMenuBox>div{
+    font-weight: 200;
+    float: left;
+}
+.footMenuBox>div h3{
+    margin-bottom: 14px;
+}
+.store_f{
+    font-size: 0.9rem;
+}
+.user_f{
+    margin-left: 100px;
+    font-size: 0.9rem;
+}
+.prod_f{
+    margin-left: 100px;
+    font-size: 0.9rem;
+}
+.info_f{
+    margin-left: 100px;
+    font-size: 0.9rem;
+}
+.world{
+    float: left;
+    width: 156px; height: 42px;
+    background-image: url(../../img/sony/world.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.footMenuBox>div li:hover{
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+.companyInfo{
+    float: left;
+    font-size: 0.8rem;
+    color: #fff;
+}
+.copyright{
+    float: left;
+    font-size: 0.8rem;
+    color: #fff;
+}
